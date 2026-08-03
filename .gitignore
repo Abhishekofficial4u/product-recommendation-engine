@@ -1,0 +1,31 @@
+# Python virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# Node.js dependencies & build outputs
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# Python caches and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Environment configurations with secrets
+.env
+.env.local
+
+# IDE & OS specific files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+scratch/
+_backup_docs/
+
+# Temporary data / extractions
+ml-100k-extracted/

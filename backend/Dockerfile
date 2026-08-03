@@ -14,7 +14,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 # Copy requirements first (layer cache — only reinstalls if requirements change)
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir setuptools wheel "numpy==1.26.3" Cython
+RUN pip install --no-cache-dir --no-build-isolation -r requirements.txt
 
 # Copy the entire backend
 COPY . .
